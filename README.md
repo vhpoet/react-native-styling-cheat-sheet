@@ -2,8 +2,13 @@
 
 All of the React Native component styles in one page. Imported from the [official docs](http://facebook.github.io/react-native/docs/getting-started.html).
 
-## Components
+## Contents
+
+### General
 - [Flexbox](#flexbox)
+- [ShadowPropTypesIOS](#shadow-prop-types-ios)
+
+### Components
 - [Image](#image)
 - [ScrollView](#scrollview)
 - [Text](#text)
@@ -49,6 +54,14 @@ All of the React Native component styles in one page. Imported from the [officia
 | top | customReactPropTypes.number | `top` is the number of logical pixels to offset the top edge of this component. It works similarly to `top` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See https://developer.mozilla.org/en-US/docs/Web/CSS/top for more details of how `top` affects layout. |
 | width | customReactPropTypes.number | `width` sets the width of this component. It works similarly to `width` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See http://www.w3schools.com/cssref/pr_dim_width.asp for more details. |
 | zIndex | customReactPropTypes.number | `zIndex` controls which components display on top of others. Normally, you don't use `zIndex`. Components render according to their order in the document tree, so later components draw over earlier ones. `zIndex` may be useful if you have animations or custom modal interfaces where you don't want this behavior. It works like the CSS `z-index` property - components with a larger `zIndex` will render on top. Think of the z-direction like it's pointing from the phone into your eyeball. See https://developer.mozilla.org/en-US/docs/Web/CSS/z-index for more detail. |
+
+## Shadow Prop Types IOS
+| Name | Type | Description | 
+| ---- | ---- | ----------- |
+| shadowColor | customColorPropType | Sets the drop shadow color |
+| shadowOffset | customReactPropTypes.shape( {width: ReactPropTypes.number, height: ReactPropTypes.number} ) | Sets the drop shadow offset |
+| shadowOpacity | customReactPropTypes.number | Sets the drop shadow opacity (multiplied by the color's alpha component) |
+| shadowRadius | customReactPropTypes.number | Sets the drop shadow blur radius |
 
 ## Image
 | Name | Required | Type | Platforms | Description | 
