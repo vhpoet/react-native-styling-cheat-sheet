@@ -1,5 +1,13 @@
 # react-native-stylesheet-cheat-sheet
 
+All of the React Native component styles in one page. Imported from the [official docs](http://facebook.github.io/react-native/docs/getting-started.html)
+
+## Components
+- [Image](#image-style)
+- [ScrollView](#scrollview-style)
+- [Text](#text-style)
+- [View](#view-style)
+
 ## Image (style)
 | Name | Required | Type | Platforms | Description | 
 | ---- | -------- | ---- | --------- | ----------- |
@@ -70,7 +78,7 @@
 | textDecorationStyle | false | ReactPropTypes.oneOf( ['solid' /*default*/, 'double', 'dotted','dashed'] ) | ios | |
 | writingDirection | false | ReactPropTypes.oneOf( ['auto' /*default*/, 'ltr', 'rtl'] ) | ios | |
 
-#View (style)
+## View (style)
 | Name | Required | Type | Platforms | Description | 
 | ---- | -------- | ---- | --------- | ----------- |
 | Flexbox... |
