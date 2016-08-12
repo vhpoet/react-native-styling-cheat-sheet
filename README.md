@@ -74,9 +74,9 @@ All of the React Native component styles in one page. Imported from the [officia
 ## Image
 | Name | Required | Type | Platforms | Description | 
 | ---- | -------- | ---- | --------- | ----------- |
-| All of [Flexbox](#flexbox) |
-| All of [ShadowPropTypesIOS](#shadow-prop-types-ios) |
-| All of [Transforms](#transforms) |
+| ...[Flexbox](#flexbox) |
+| ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
+| ...[Transforms](#transforms) |
 | backfaceVisibility | false | `ReactPropTypes.oneOf(['visible', 'hidden'])` | | |
 | backgroundColor | false | `ColorPropType` | | |
 | borderBottomLeftRadius | false | `ReactPropTypes.number` | | |
@@ -95,9 +95,9 @@ All of the React Native component styles in one page. Imported from the [officia
 ## ScrollView
 | Name | Required | Type | Platforms | Description | 
 | ---- | -------- | ---- | --------- | ----------- |
-| [Flexbox](#flexbox) |
-| [ShadowPropTypesIOS](#shadow-prop-types-ios) |
-| [Transforms](#transforms) |
+| ...[Flexbox](#flexbox) |
+| ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
+| ...[Transforms](#transforms) |
 | backfaceVisibility | false | `ReactPropTypes.oneOf(['visible', 'hidden'])` | | |
 | backgroundColor | false | `ColorPropType` | | |
 | borderBottomColor | false | `ColorPropType` | | |
@@ -123,7 +123,7 @@ All of the React Native component styles in one page. Imported from the [officia
 ## Text
 | Name | Required | Type | Platforms | Description | 
 | ---- | -------- | ---- | --------- | ----------- |
-| All of [View](#view) |
+| ...[View](#view) |
 | color | false | `ColorPropType` | | |
 | fontFamily | false | `ReactPropTypes.string` | | |
 | fontSize | false | `ReactPropTypes.number` | | |
@@ -144,9 +144,9 @@ All of the React Native component styles in one page. Imported from the [officia
 ## View
 | Name | Required | Type | Platforms | Description | 
 | ---- | -------- | ---- | --------- | ----------- |
-| All of [Flexbox](#flexbox) |
-| All of [ShadowPropTypesIOS](#shadow-prop-types-ios) |
-| All of [Transforms](#transforms) |
+| ...[Flexbox](#flexbox) |
+| ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
+| ...[Transforms](#transforms) |
 | backfaceVisibility | false | `ReactPropTypes.oneOf(['visible', 'hidden'])` | | |
 | backgroundColor | false | `ColorPropType` | | |
 | borderBottomColor | false | `ColorPropType` | | |
