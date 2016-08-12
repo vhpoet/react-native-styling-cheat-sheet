@@ -7,6 +7,7 @@ All of the React Native component styles in one page. Imported from the [officia
 ### General
 - [Flexbox](#flexbox)
 - [ShadowPropTypesIOS](#shadow-prop-types-ios)
+- [Transforms](#transforms)
 
 ### Components
 - [Image](#image)
@@ -62,6 +63,13 @@ All of the React Native component styles in one page. Imported from the [officia
 | shadowOffset | `customReactPropTypes.shape( {width: ReactPropTypes.number, height: ReactPropTypes.number} )` | Sets the drop shadow offset |
 | shadowOpacity | `customReactPropTypes.number` | Sets the drop shadow opacity (multiplied by the color's alpha component) |
 | shadowRadius | `customReactPropTypes.number` | Sets the drop shadow blur radius |
+
+## Transforms
+| Name | Type |
+| ---- | ---- |
+| decomposedMatrix | `customDecomposedMatrixPropType` |
+| transform | `customReactPropTypes.arrayOf( ReactPropTypes.oneOfType([ ReactPropTypes.shape({perspective: ReactPropTypes.number}), ReactPropTypes.shape({rotate: ReactPropTypes.string}), ReactPropTypes.shape({rotateX: ReactPropTypes.string}), ReactPropTypes.shape({rotateY: ReactPropTypes.string}), ReactPropTypes.shape({rotateZ: ReactPropTypes.string}), ReactPropTypes.shape({scale: ReactPropTypes.number}), ReactPropTypes.shape({scaleX: ReactPropTypes.number}), ReactPropTypes.shape({scaleY: ReactPropTypes.number}), ReactPropTypes.shape({translateX: ReactPropTypes.number}), ReactPropTypes.shape({translateY: ReactPropTypes.number}), ReactPropTypes.shape({skewX: ReactPropTypes.string}), ReactPropTypes.shape({skewY: ReactPropTypes.string}) ]) )` |
+| transformMatrix | `customTransformMatrixPropType` |
 
 ## Image
 | Name | Required | Type | Platforms | Description | 
