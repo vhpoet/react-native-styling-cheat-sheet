@@ -79,7 +79,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
 | ...[Transforms](#transforms) |
-| backfaceVisibility | false | `ReactPropTypes.oneOf(['visible', 'hidden'])` | | |
+| backfaceVisibility | false | `ReactPropTypes .oneOf(['visible', 'hidden'])` | | |
 | backgroundColor | false | `ColorPropType` | | |
 | borderBottomLeftRadius | false | `ReactPropTypes.number` | | |
 | borderBottomRightRadius | false | `ReactPropTypes.number` | | |
@@ -89,8 +89,8 @@ Most of the React Native styling material in one page. Imported from the [offici
 | borderTopRightRadius | false | `ReactPropTypes.number` | | |
 | borderWidth | false | `ReactPropTypes.number` | | |
 | opacity | false | `ReactPropTypes.number` | | |
-| overflow | false | `ReactPropTypes.oneOf(['visible', 'hidden'])` | | |
-| resizeMode | false | `ReactPropTypes.oneOf(Object.keys(ImageResizeMode))` | | |
+| overflow | false | `ReactPropTypes .oneOf(['visible', 'hidden'])` | | |
+| resizeMode | false | `ReactPropTypes .oneOf(Object.keys(ImageResizeMode))` | | |
 | tintColor | false | `ColorPropType` | | Changes the color of all the non-transparent pixels to the tintColor. |
 | overlayColor | false | `ReactPropTypes.string` | android | When the image has rounded corners, specifying an overlayColor will cause the remaining space in the corners to be filled with a solid color. This is useful in cases which are not supported by the Android implementation of rounded corners: - Certain resize modes, such as 'contain' - Animated GIFs A typical way to use this prop is with images displayed on a solid background and setting the `overlayColor` to the same color as the background. For details of how this works under the hood, see http://frescolib.org/docs/rounded-corners-and-circles.html |
 
