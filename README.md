@@ -18,7 +18,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 - [View](#view)
 
 ## Flexbox
-| Name | Type | Description | 
+| Name | Type | Description |
 | ---- | ---- | ----------- |
 | alignItems | [oneOf](#oneof) `flex-start`, `flex-end`, `center`, `stretch` | `alignItems` aligns children in the cross direction. For example, if children are flowing vertically, `alignItems` controls how they align horizontally. It works like `align-items` in CSS, except the default value is `stretch` instead of `flex-start`. See https://css-tricks.com/almanac/properties/a/align-items/ for more detail. |
 | alignSelf | [oneOf](#oneof) `auto`, `flex-start`, `flex-end`, `center`, `stretch`, `alignSelf` | controls how a child aligns in the cross direction, overriding the `alignItems` of the parent. It works like `align-self` in CSS. See https://css-tricks.com/almanac/properties/a/align-self/ for more detail. |
@@ -59,7 +59,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | zIndex | [number](#number) | `zIndex` controls which components display on top of others. Normally, you don't use `zIndex`. Components render according to their order in the document tree, so later components draw over earlier ones. `zIndex` may be useful if you have animations or custom modal interfaces where you don't want this behavior. It works like the CSS `z-index` property - components with a larger `zIndex` will render on top. Think of the z-direction like it's pointing from the phone into your eyeball. See https://developer.mozilla.org/en-US/docs/Web/CSS/z-index for more detail. |
 
 ## Shadow Prop Types IOS
-| Name | Type | Description | 
+| Name | Type | Description |
 | ---- | ---- | ----------- |
 | shadowColor | `customColorPropType` | Sets the drop shadow color |
 | shadowOffset | `customReactPropTypes.shape( {width: ReactPropTypes.number, height: ReactPropTypes.number} )` | Sets the drop shadow offset |
@@ -74,7 +74,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | transformMatrix | `customTransformMatrixPropType` |
 
 ## Image
-| Name | Required | Type | Platforms | Description | 
+| Name | Required | Type | Platforms | Description |
 | ---- | -------- | ---- | --------- | ----------- |
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
@@ -95,7 +95,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | overlayColor | false | [string](#string) | android | When the image has rounded corners, specifying an overlayColor will cause the remaining space in the corners to be filled with a solid color. This is useful in cases which are not supported by the Android implementation of rounded corners: - Certain resize modes, such as 'contain' - Animated GIFs A typical way to use this prop is with images displayed on a solid background and setting the `overlayColor` to the same color as the background. For details of how this works under the hood, see http://frescolib.org/docs/rounded-corners-and-circles.html |
 
 ## ScrollView
-| Name | Required | Type | Platforms | Description | 
+| Name | Required | Type | Platforms | Description |
 | ---- | -------- | ---- | --------- | ----------- |
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
@@ -123,7 +123,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | elevation | false | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
 
 ## Text
-| Name | Required | Type | Platforms | Description | 
+| Name | Required | Type | Platforms | Description |
 | ---- | -------- | ---- | --------- | ----------- |
 | ...[View](#view) |
 | color | false | `ColorPropType` | | |
@@ -144,7 +144,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | writingDirection | false | [oneOf](#oneof) `auto`, `ltr`, `rtl` | ios | |
 
 ## View
-| Name | Required | Type | Platforms | Description | 
+| Name | Required | Type | Platforms | Description |
 | ---- | -------- | ---- | --------- | ----------- |
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
@@ -170,6 +170,14 @@ Most of the React Native styling material in one page. Imported from the [offici
 | opacity | false | [number](#number) | | |
 | overflow | false | [oneOf](#oneof) `visible`, `hidden` | | |
 | elevation | false | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
+
+## TextInput
+| Name | Required | Type | Platforms | Description |
+| ---- | -------- | ---- | --------- | ----------- |
+| autoFocus | false | [bool](#bool) | | If true, focuses the input on componentDidMount. The default value is false. |
+| keyboardType | false | [oneOf](#oneof) `default`, `email-address`, `numeric`, `phone-pad`, // iOS-only `ascii-capable`, `numbers-and-punctuation`, `url`, `number-pad`, `name-phone-pad`, `decimal-pad`, `twitter`, `web-search` | | Determines which keyboard to open |
+| maxLength | [number](#number) | | Limits the maximum number of characters that can be entered |
+| onChangeText | false | callback func | | Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. |
 
 ## Appendix
 ### Types
