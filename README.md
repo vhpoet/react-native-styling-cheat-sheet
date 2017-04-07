@@ -21,7 +21,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | Name | Type | Description | 
 | ---- | ---- | ----------- |
 | alignItems | [oneOf](#oneof) `flex-start`, `flex-end`, `center`, `stretch` | `alignItems` aligns children in the cross direction. For example, if children are flowing vertically, `alignItems` controls how they align horizontally. It works like `align-items` in CSS, except the default value is `stretch` instead of `flex-start`. See https://css-tricks.com/almanac/properties/a/align-items/ for more detail. |
-| alignSelf | [oneOf](#oneof) `auto`, `flex-start`, `flex-end`, `center`, `stretch`, `alignSelf` | controls how a child aligns in the cross direction, overriding the `alignItems` of the parent. It works like `align-self` in CSS. See https://css-tricks.com/almanac/properties/a/align-self/ for more detail. |
+| alignSelf | [oneOf](#oneof) `auto`, `flex-start`, `flex-end`, `center`, `stretch` | controls how a child aligns in the cross direction, overriding the `alignItems` of the parent. It works like `align-self` in CSS. See https://css-tricks.com/almanac/properties/a/align-self/ for more detail. |
 | borderBottomWidth | [number](#number) | `borderBottomWidth` works like `border-bottom-width` in CSS. See http://www.w3schools.com/cssref/pr_border-bottom_width.asp for more details. |
 | borderLeftWidth | [number](#number) | `borderLeftWidth` works like `border-left-width` in CSS. See http://www.w3schools.com/cssref/pr_border-bottom_width.asp for more details. |
 | borderRightWidth | [number](#number) | `borderRightWidth` works like `border-right-width` in CSS. See http://www.w3schools.com/cssref/pr_border-right_width.asp for more details. |
