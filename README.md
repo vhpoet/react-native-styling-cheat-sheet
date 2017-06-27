@@ -90,7 +90,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | borderWidth | false | [number](#number) | | |
 | opacity | false | [number](#number) | | |
 | overflow | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| resizeMode | false | [oneOf](#oneof) `Object.keys(ImageResizeMode))` | | |
+| resizeMode | false | [oneOf](#oneof) `cover`, `contain`, `stretch`, `repeat`, `center` | | Determines how to resize the image when the frame doesn't match the raw image dimensions. Visit the [official docs](https://facebook.github.io/react-native/docs/image.html#resizemode) for a guide on each |
 | tintColor | false | `ColorPropType` | | Changes the color of all the non-transparent pixels to the tintColor. |
 | overlayColor | false | [string](#string) | android | When the image has rounded corners, specifying an overlayColor will cause the remaining space in the corners to be filled with a solid color. This is useful in cases which are not supported by the Android implementation of rounded corners: - Certain resize modes, such as 'contain' - Animated GIFs A typical way to use this prop is with images displayed on a solid background and setting the `overlayColor` to the same color as the background. For details of how this works under the hood, see http://frescolib.org/docs/rounded-corners-and-circles.html |
 
