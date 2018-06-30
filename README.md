@@ -135,7 +135,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | fontWeight | false | [oneOf](#oneof) `normal`, `bold`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` | | Specifies font weight. The values 'normal' and 'bold' are supported for most fonts. Not all fonts have a variant for each of the numeric values, in that case the closest one is chosen. |
 | lineHeight | false | [number](#number) | | |
 | textAlign | false | [oneOf](#oneof) `auto`, `left`, `right`, `center`, `justify` | | Specifies text alignment. The value 'justify' is only supported on iOS and fallbacks to `left` on Android. |
-| textDecorationLine | false | [oneOf](#oneof) `none`, `underline`, `line-through`, `underline`, `line-through` | | |
+| textDecorationLine | false | [oneOf](#oneof) `none`, `underline`, `line-through` | | |
 | textShadowColor | false | `ColorPropType` | | |
 | textShadowOffset | false | `ReactPropTypes.shape( {width: ReactPropTypes.number, height: ReactPropTypes.number} )` | | |
 | textShadowRadius | false | [number](#number) | | |
