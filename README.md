@@ -20,16 +20,27 @@ Most of the React Native styling material in one page. Imported from the [offici
 ## Flexbox
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| alignItems | [oneOf](#oneof) `flex-start`, `flex-end`, `center`, `stretch` | stretch | `alignItems` aligns children in the cross direction. For example, if children are flowing vertically, `alignItems` controls how they align horizontally. It works like `align-items` in CSS, except the default value is `stretch` instead of `flex-start`. See https://css-tricks.com/almanac/properties/a/align-items/ for more detail. |
-| alignSelf | [oneOf](#oneof) `auto`, `flex-start`, `flex-end`, `center`, `stretch` | auto | controls how a child aligns in the cross direction, overriding the `alignItems` of the parent. It works like `align-self` in CSS. See https://css-tricks.com/almanac/properties/a/align-self/ for more detail. |
+| alignContent | [oneOf](#oneof) `flex-start`, `flex-end`, `center`, `stretch`, `space-between`, `space-around` | | `alignContent` controls how rows align in the cross direction, overriding the `alignContent` of the parent. See https://developer.mozilla.org/en-US/docs/Web/CSS/align-content for more details. |
+| alignItems | [oneOf](#oneof) `flex-start`, `flex-end`, `center`, `stretch`, `baseline` | stretch | `alignItems` aligns children in the cross direction. For example, if children are flowing vertically, `alignItems` controls how they align horizontally. It works like `align-items` in CSS, except the default value is `stretch` instead of `flex-start`. See https://css-tricks.com/almanac/properties/a/align-items/ for more detail. |
+| alignSelf | [oneOf](#oneof) `auto`, `flex-start`, `flex-end`, `center`, `stretch`, `baseline` | auto | controls how a child aligns in the cross direction, overriding the `alignItems` of the parent. It works like `align-self` in CSS. See https://css-tricks.com/almanac/properties/a/align-self/ for more detail. |
+| aspectRatio | [number](#number) | | `aspectRatio` controls the size of the undefined dimension of a node. `aspectRatio` is a non-standard property only available in React Native and not CSS. On a node with a set `width`/`height` `aspectRatio` controls the size of the unset dimension. On a node with a set `flexBasis` `aspectRatio` controls the size of the node in the cross axis if unset. On a node with a `measure` function `aspectRatio` works as though the `measure` function measures the `flexBasis`. On a node with `flexGrow`/`flexShrink` `aspectRatio` controls the size of the node in the cross axis if unset. `aspectRatio` takes min/max dimensions into account. |
 | borderBottomWidth | [number](#number) | 0 | `borderBottomWidth` works like `border-bottom-width` in CSS. See http://www.w3schools.com/cssref/pr_border-bottom_width.asp for more details. |
 | borderLeftWidth | [number](#number) | 0 | `borderLeftWidth` works like `border-left-width` in CSS. See http://www.w3schools.com/cssref/pr_border-bottom_width.asp for more details. |
 | borderRightWidth | [number](#number) | 0 | `borderRightWidth` works like `border-right-width` in CSS. See http://www.w3schools.com/cssref/pr_border-right_width.asp for more details. |
 | borderTopWidth | [number](#number) | 0 | `borderTopWidth` works like `border-top-width` in CSS. See http://www.w3schools.com/cssref/pr_border-top_width.asp for more details. |
+| borderEndWidth | [number](#number) | 0 | When direction is ltr, `borderEndWidth` is equivalent to `borderRightWidth`. When direction is rtl, `borderEndWidth` is equivalent to `borderLeftWidth`. |
+| borderStartWidth | [number](#number) | 0 | When direction is ltr, `borderStartWidth` is equivalent to `borderLeftWidth`. When direction is rtl, `borderStartWidth` is equivalent to `borderRightWidth`. |
 | borderWidth | [number](#number) | 0 | `borderWidth` works like `border-width` in CSS. See http://www.w3schools.com/cssref/pr_border-width.asp for more details. |
 | bottom | [number](#number) | auto* | `bottom` is the number of logical pixels to offset the bottom edge of this component. It works similarly to `bottom` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See https://developer.mozilla.org/en-US/docs/Web/CSS/bottom for more details of how `top` affects layout. |
-| flex | [number](#number) | 0 | In React Native `flex` does not work the same way that it does in CSS. `flex` is a number rather than a string, and it works according to the `css-layout` library at https://github.com/facebook/css-layout . When `flex` is a positive number, it makes the component flexible and it will be sized proportional to its flex value. So a component with `flex` set to 2 will take twice the space as a component with `flex` set to 1. When `flex` is 0, the component is sized according to `width` and `height` and it is inflexible. When `flex` is -1, the component is normally sized according `width` and `height`. However, if there's not enough space, the component will shrink to its `minWidth` and `minHeight`. |
+| direction | [oneOf](#oneof) `inherit`, `ltr`, `rtl` | `inherit` | `direction` specifies the directional flow of the user interface. The default is `inherit`, except for root node which will have value based on the current locale. See https://facebook.github.io/yoga/docs/rtl/ for more details. |
+| display | [oneOf](#oneof) `none`, `flex` | `flex` | `display` sets the display type of this component. It works similarly to `display` in CSS, but only support 'flex' and 'none'. |
+| end | [number](#number) | auto* | When the direction is `ltr`, `end` is equivalent to `right`. When the direction is `rtl`, `end` is equivalent to `left`. This style takes precedence over the `left` and `right` styles. |
+| start | [number](#number) | auto* | When the direction is `ltr`, `start` is equivalent to `left`. When the direction is `rtl`, `start` is equivalent to `right`. This style takes precedence over the `left`, `right`, and `end` styles. |
+| flex | [number](#number) | 0 | In React Native `flex` does not work the same way that it does in CSS. `flex` is a number rather than a string, and it works according to the `css-layout` library at https://github.com/facebook/css-layout . When `flex` is a positive number, it makes the component flexible and it will be sized proportional to its flex value. So a component with `flex` set to 2 will take twice the space as a component with `flex` set to 1. When `flex` is 0, the component is sized according to `width` and `height` and it is inflexible. When `flex` is -1, the component is normally sized according `width` and `height`. However, if there's not enough space, the component will shrink to its `minWidth` and `minHeight`. `flexGrow`, `flexShrink` and `flexBasis` work the same as in CSS. |
 | flexDirection | [oneOf](#oneof) `row`, `row-reverse`, `column`, `column-reverse` | column | `flexDirection` controls which directions children of a container go. `row` goes left to right, `column` goes top to bottom, and you may be able to guess what the other two do. It works like `flex-direction` in CSS, except the default is `column`. See https://css-tricks.com/almanac/properties/f/flex-direction/ for more detail. |
+| flexBasis | [number](#number) | 0 | |
+| flexGrow | [number](#number) | 0 | |
+| flexShrink | [number](#number) | 0 | |
 | flexWrap | [oneOf](#oneof) `wrap`, `nowrap` | nowrap | `flexWrap` controls whether children can wrap around after they hit the end of a flex container. It works like `flex-wrap` in CSS. See https://css-tricks.com/almanac/properties/f/flex-wrap/ for more detail. |
 | height | [number](#number) | auto* | `height` sets the height of this component. It works similarly to `height` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See http://www.w3schools.com/cssref/pr_dim_width.asp for more details. |
 | justifyContent | [oneOf](#oneof) `flex-start`, `flex-end`, `center`, `space-between`, `space-around` | flex-start | `justifyContent` aligns children in the main direction. For example, if children are flowing vertically, `justifyContent` controls how they align vertically. It works like `justify-content` in CSS. See https://css-tricks.com/almanac/properties/j/justify-content/ for more detail. |
@@ -41,6 +52,8 @@ Most of the React Native styling material in one page. Imported from the [offici
 | marginRight | [number](#number) | 0 | `marginRight` works like `margin-right` in CSS. See http://www.w3schools.com/cssref/pr_margin-right.asp for more details. |
 | marginTop | [number](#number) | 0 | `marginTop` works like `margin-top` in CSS. See http://www.w3schools.com/cssref/pr_margin-top.asp for more details. |
 | marginVertical | [number](#number) | 0 | Setting `marginVertical` has the same effect as setting both `marginTop` and `marginBottom`. |
+| marginEnd | [number](#number) | 0 | When direction is `ltr`, `marginEnd` is equivalent to `marginRight`. When direction is `rtl`, `marginEnd` is equivalent to `marginLeft`.|
+| marginStart | [number](#number) | 0 | When direction is `ltr`, `marginStart` is equivalent to `marginLeft`. When direction is `rtl`, `marginStart` is equivalent to `marginRight`. |
 | maxHeight | [number](#number) | auto* | `maxHeight` is the maximum height for this component, in logical pixels. It works similarly to `max-height` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See http://www.w3schools.com/cssref/pr_dim_max-height.asp for more details. |
 | maxWidth | [number](#number) | auto* | `maxWidth` is the maximum width for this component, in logical pixels. It works similarly to `max-width` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See http://www.w3schools.com/cssref/pr_dim_max-width.asp for more details. |
 | minHeight | [number](#number) | auto* | `minHeight` is the minimum height for this component, in logical pixels. It works similarly to `min-height` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See http://www.w3schools.com/cssref/pr_dim_min-height.asp for more details. |
@@ -52,6 +65,8 @@ Most of the React Native styling material in one page. Imported from the [offici
 | paddingRight | [number](#number) | 0 | `paddingRight` works like `padding-right` in CSS. See http://www.w3schools.com/cssref/pr_padding-right.asp for more details. |
 | paddingTop | [number](#number) | 0 | `paddingTop` works like `padding-top` in CSS. See http://www.w3schools.com/cssref/pr_padding-top.asp for more details. |
 | paddingVertical | [number](#number) | 0 | Setting `paddingVertical` is like setting both of `paddingTop` and `paddingBottom`. |
+| paddingEnd | [number](#number) | 0 | When direction is `ltr`, `paddingEnd` is equivalent to `paddingRight`. When direction is `rtl`, `paddingEnd` is equivalent to `paddingLeft`. |
+| paddingStart | [number](#number) | 0 | When direction is `ltr`, `paddingStart` is equivalent to `paddingLeft`. When direction is `rtl`, `paddingStart` is equivalent to `paddingRight`. |
 | position | [oneOf](#oneof) `absolute`, `relative` | relative | `position` in React Native is similar to regular CSS, but everything is set to `relative` by default, so `absolute` positioning is always just relative to the parent. If you want to position a child using specific numbers of logical pixels relative to its parent, set the child to have `absolute` position. If you want to position a child relative to something that is not its parent, just don't use styles for that. Use the component tree. See https://github.com/facebook/css-layout for more details on how `position` differs between React Native and CSS. |
 | right | [number](#number) | auto* | `right` is the number of logical pixels to offset the right edge of this component. It works similarly to `right` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See https://developer.mozilla.org/en-US/docs/Web/CSS/right for more details of how `right` affects layout. |
 | top | [number](#number) | auto* | `top` is the number of logical pixels to offset the top edge of this component. It works similarly to `top` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See https://developer.mozilla.org/en-US/docs/Web/CSS/top for more details of how `top` affects layout. |
@@ -132,7 +147,10 @@ Most of the React Native styling material in one page. Imported from the [offici
 | fontFamily | false | [string](#string) | | |
 | fontSize | false | [number](#number) | | |
 | fontStyle | false | [oneOf](#oneof) `normal`, `italic` | | |
+| fontVariant | false | [arrayOf](#arrayof)([oneOf](#oneof)`small-caps`, `oldstyle-nums`, `lining-nums`, `tabular-nums`, `proportional-nums`) | ios | |
+| textTransform | false | [oneOf](#oneof) `none`, `uppercase`, `lowercase`, `capitalize` | | |
 | fontWeight | false | [oneOf](#oneof) `normal`, `bold`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` | | Specifies font weight. The values 'normal' and 'bold' are supported for most fonts. Not all fonts have a variant for each of the numeric values, in that case the closest one is chosen. |
+| includeFontPadding | false | [bool](#bool) | android | Set to false to remove extra font padding intended to make space for certain ascenders / descenders. With some fonts, this padding can make text look slightly misaligned when centered vertically. For best results also set `textAlignVertical` to center. Default is true.|
 | lineHeight | false | [number](#number) | | |
 | textAlign | false | [oneOf](#oneof) `auto`, `left`, `right`, `center`, `justify` | | Specifies text alignment. The value 'justify' is only supported on iOS and fallbacks to `left` on Android. |
 | textDecorationLine | false | [oneOf](#oneof) `none`, `underline`, `line-through` | | |
@@ -154,10 +172,14 @@ Most of the React Native styling material in one page. Imported from the [offici
 | backfaceVisibility | false | [oneOf](#oneof) `visible`, `hidden` | | |
 | backgroundColor | false | `ColorPropType` | | |
 | borderBottomColor | false | `ColorPropType` | | |
+| borderBottomEndRadius | false | [number](#number) | | |
+| borderBottomStartRadius | false | [number](#number) | | |
 | borderBottomLeftRadius | false | [number](#number) | | |
 | borderBottomRightRadius | false | [number](#number) | | |
 | borderBottomWidth | false | [number](#number) | | |
 | borderColor | false | `ColorPropType` | | |
+| borderEndColor | false | `ColorPropType` | | |
+| borderStartColor | false | `ColorPropType` | | |
 | borderLeftColor | false | `ColorPropType` | | |
 | borderLeftWidth | false | [number](#number) | | |
 | borderRadius | false | [number](#number) | | |
@@ -165,6 +187,8 @@ Most of the React Native styling material in one page. Imported from the [offici
 | borderRightWidth | false | [number](#number) | | |
 | borderStyle | false | [oneOf](#oneof) `solid`, `dotted`, `dashed` | | |
 | borderTopColor | false | `ColorPropType` | | |
+| borderTopEndRadius | false | [number](#number) | | |
+| borderTopStartRadius | false | [number](#number) | | |
 | borderTopLeftRadius | false | [number](#number) | | |
 | borderTopRightRadius | false | [number](#number) | | |
 | borderTopWidth | false | [number](#number) | | |
@@ -189,5 +213,11 @@ ReactPropTypes.number
 #### [string](#string)
 ReactPropTypes.string
 
+#### [bool](#bool)
+ReactPropTypes.bool
+
 #### [oneOf](#oneof)
 ReactPropTypes.oneOf([values])
+
+#### [arrayOf](#arrayof)
+ReactPropTypes.arrayOf(value)
