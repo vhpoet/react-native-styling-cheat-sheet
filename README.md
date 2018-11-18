@@ -202,7 +202,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | ---- | -------- | ---- | --------- | ----------- |
 | autoFocus | false | [bool](#bool) | | If true, focuses the input on componentDidMount. The default value is false. |
 | keyboardType | false | [oneOf](#oneof) `default`, `email-address`, `numeric`, `phone-pad`, // iOS-only `ascii-capable`, `numbers-and-punctuation`, `url`, `number-pad`, `name-phone-pad`, `decimal-pad`, `twitter`, `web-search` | | Determines which keyboard to open |
-| maxLength | [number](#number) | | Limits the maximum number of characters that can be entered |
+| maxLength | false | [number](#number) | | Limits the maximum number of characters that can be entered |
 | onChangeText | false | callback func | | Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. |
 
 ## Appendix
