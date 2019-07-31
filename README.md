@@ -15,6 +15,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 - [Image](#image)
 - [ScrollView](#scrollview)
 - [Text](#text)
+- [TextInput](#textinput)
 - [View](#view)
 
 ## Flexbox
@@ -163,6 +164,14 @@ Most of the React Native styling material in one page. Imported from the [offici
 | textDecorationStyle | false | [oneOf](#oneof) `solid`, `double`, `dotted`, `dashed` | ios | |
 | writingDirection | false | [oneOf](#oneof) `auto`, `ltr`, `rtl` | ios | |
 
+## TextInput
+| Name | Required | Type | Platforms | Description |
+| ---- | -------- | ---- | --------- | ----------- |
+| autoFocus | false | [bool](#bool) | | If true, focuses the input on componentDidMount. The default value is false. |
+| keyboardType | false | [oneOf](#oneof) `default`, `email-address`, `numeric`, `phone-pad`, // iOS-only `ascii-capable`, `numbers-and-punctuation`, `url`, `number-pad`, `name-phone-pad`, `decimal-pad`, `twitter`, `web-search` | | Determines which keyboard to open |
+| maxLength | false | [number](#number) | | Limits the maximum number of characters that can be entered |
+| onChangeText | false | callback func | | Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. |
+
 ## View
 | Name | Required | Type | Platforms | Description |
 | ---- | -------- | ---- | --------- | ----------- |
@@ -196,14 +205,6 @@ Most of the React Native styling material in one page. Imported from the [offici
 | opacity | false | [number](#number) | | |
 | overflow | false | [oneOf](#oneof) `visible`, `hidden` | | |
 | elevation | false | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
-
-## TextInput
-| Name | Required | Type | Platforms | Description |
-| ---- | -------- | ---- | --------- | ----------- |
-| autoFocus | false | [bool](#bool) | | If true, focuses the input on componentDidMount. The default value is false. |
-| keyboardType | false | [oneOf](#oneof) `default`, `email-address`, `numeric`, `phone-pad`, // iOS-only `ascii-capable`, `numbers-and-punctuation`, `url`, `number-pad`, `name-phone-pad`, `decimal-pad`, `twitter`, `web-search` | | Determines which keyboard to open |
-| maxLength | false | [number](#number) | | Limits the maximum number of characters that can be entered |
-| onChangeText | false | callback func | | Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. |
 
 ## Appendix
 ### Types
