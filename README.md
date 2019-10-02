@@ -92,119 +92,119 @@ Most of the React Native styling material in one page. Imported from the [offici
 | transformMatrix | `customTransformMatrixPropType` |
 
 ## Image
-| Name | Required | Type | Platforms | Description |
-| ---- | -------- | ---- | --------- | ----------- |
+| Name | Type | Platforms | Description |
+| ---- | ---- | --------- | ----------- |
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
 | ...[Transforms](#transforms) |
-| backfaceVisibility | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| backgroundColor | false | `ColorPropType` | | |
-| borderBottomLeftRadius | false | [number](#number) | | |
-| borderBottomRightRadius | false | [number](#typee-number) | | |
-| borderColor | false | `ColorPropType` | | |
-| borderRadius | false | [number](#number) | | |
-| borderTopLeftRadius | false | [number](#number) | | |
-| borderTopRightRadius | false | [number](#number) | | |
-| borderWidth | false | [number](#number) | | |
-| opacity | false | [number](#number) | | |
-| overflow | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| resizeMode | false | [oneOf](#oneof) `cover`, `contain`, `stretch`, `repeat`, `center` | | Determines how to resize the image when the frame doesn't match the raw image dimensions. Visit the [official docs](https://facebook.github.io/react-native/docs/image.html#resizemode) for a guide on each |
-| tintColor | false | `ColorPropType` | | Changes the color of all the non-transparent pixels to the tintColor. |
-| overlayColor | false | [string](#string) | android | When the image has rounded corners, specifying an overlayColor will cause the remaining space in the corners to be filled with a solid color. This is useful in cases which are not supported by the Android implementation of rounded corners: - Certain resize modes, such as 'contain' - Animated GIFs A typical way to use this prop is with images displayed on a solid background and setting the `overlayColor` to the same color as the background. For details of how this works under the hood, see http://frescolib.org/docs/rounded-corners-and-circles.html |
+| backfaceVisibility | [oneOf](#oneof) `visible`, `hidden` | | |
+| backgroundColor | `ColorPropType` | | |
+| borderBottomLeftRadius | [number](#number) | | |
+| borderBottomRightRadius | [number](#typee-number) | | |
+| borderColor | `ColorPropType` | | |
+| borderRadius | [number](#number) | | |
+| borderTopLeftRadius | [number](#number) | | |
+| borderTopRightRadius | [number](#number) | | |
+| borderWidth | [number](#number) | | |
+| opacity | [number](#number) | | |
+| overflow | [oneOf](#oneof) `visible`, `hidden` | | |
+| resizeMode | [oneOf](#oneof) `cover`, `contain`, `stretch`, `repeat`, `center` | | Determines how to resize the image when the frame doesn't match the raw image dimensions. Visit the [official docs](https://facebook.github.io/react-native/docs/image.html#resizemode) for a guide on each |
+| tintColor | `ColorPropType` | | Changes the color of all the non-transparent pixels to the tintColor. |
+| overlayColor | [string](#string) | android | When the image has rounded corners, specifying an overlayColor will cause the remaining space in the corners to be filled with a solid color. This is useful in cases which are not supported by the Android implementation of rounded corners: - Certain resize modes, such as 'contain' - Animated GIFs A typical way to use this prop is with images displayed on a solid background and setting the `overlayColor` to the same color as the background. For details of how this works under the hood, see http://frescolib.org/docs/rounded-corners-and-circles.html |
 
 ## ScrollView
-| Name | Required | Type | Platforms | Description |
-| ---- | -------- | ---- | --------- | ----------- |
+| Name | Type | Platforms | Description |
+| ---- | ---- | --------- | ----------- |
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
 | ...[Transforms](#transforms) |
-| backfaceVisibility | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| backgroundColor | false | `ColorPropType` | | |
-| borderBottomColor | false | `ColorPropType` | | |
-| borderBottomLeftRadius | false | [number](#number) | | |
-| borderBottomRightRadius | false | [number](#number) | | |
-| borderBottomWidth | false | [number](#number) | | |
-| borderColor | false | `ColorPropType` | | |
-| borderLeftColor | false | `ColorPropType` | | |
-| borderLeftWidth | false | [number](#number) | | |
-| borderRadius | false | [number](#number) | | |
-| borderRightColor | false | `ColorPropType` | | |
-| borderRightWidth | false | [number](#number) | | |
-| borderStyle | false | [oneOf](#oneof) `solid`, `dotted`, `dashed` | | |
-| borderTopColor | false | `ColorPropType` | | |
-| borderTopLeftRadius | false | [number](#number) | | |
-| borderTopRightRadius | false | [number](#number) | | |
-| borderTopWidth | false | [number](#number) | | |
-| borderWidth | false | [number](#number) | | |
-| opacity | false | [number](#number) | | |
-| overflow | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| elevation | false | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
+| backfaceVisibility | [oneOf](#oneof) `visible`, `hidden` | | |
+| backgroundColor | `ColorPropType` | | |
+| borderBottomColor | `ColorPropType` | | |
+| borderBottomLeftRadius | [number](#number) | | |
+| borderBottomRightRadius | [number](#number) | | |
+| borderBottomWidth | [number](#number) | | |
+| borderColor | `ColorPropType` | | |
+| borderLeftColor | `ColorPropType` | | |
+| borderLeftWidth | [number](#number) | | |
+| borderRadius | [number](#number) | | |
+| borderRightColor | `ColorPropType` | | |
+| borderRightWidth | [number](#number) | | |
+| borderStyle | [oneOf](#oneof) `solid`, `dotted`, `dashed` | | |
+| borderTopColor | `ColorPropType` | | |
+| borderTopLeftRadius | [number](#number) | | |
+| borderTopRightRadius | [number](#number) | | |
+| borderTopWidth | [number](#number) | | |
+| borderWidth | [number](#number) | | |
+| opacity | [number](#number) | | |
+| overflow | [oneOf](#oneof) `visible`, `hidden` | | |
+| elevation | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
 
 ## Text
-| Name | Required | Type | Platforms | Description |
-| ---- | -------- | ---- | --------- | ----------- |
+| Name | Type | Platforms | Description |
+| ---- | ---- | --------- | ----------- |
 | ...[View](#view) |
-| color | false | `ColorPropType` | | |
-| fontFamily | false | [string](#string) | | |
-| fontSize | false | [number](#number) | | |
-| fontStyle | false | [oneOf](#oneof) `normal`, `italic` | | |
-| fontVariant | false | [arrayOf](#arrayof)([oneOf](#oneof)`small-caps`, `oldstyle-nums`, `lining-nums`, `tabular-nums`, `proportional-nums`) | ios | |
-| textTransform | false | [oneOf](#oneof) `none`, `uppercase`, `lowercase`, `capitalize` | | |
-| fontWeight | false | [oneOf](#oneof) `normal`, `bold`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` | | Specifies font weight. The values 'normal' and 'bold' are supported for most fonts. Not all fonts have a variant for each of the numeric values, in that case the closest one is chosen. |
-| includeFontPadding | false | [bool](#bool) | android | Set to false to remove extra font padding intended to make space for certain ascenders / descenders. With some fonts, this padding can make text look slightly misaligned when centered vertically. For best results also set `textAlignVertical` to center. Default is true.|
-| lineHeight | false | [number](#number) | | |
-| textAlign | false | [oneOf](#oneof) `auto`, `left`, `right`, `center`, `justify` | | Specifies text alignment. The value 'justify' is only supported on iOS and fallbacks to `left` on Android. |
-| textDecorationLine | false | [oneOf](#oneof) `none`, `underline`, `line-through` | | |
-| textShadowColor | false | `ColorPropType` | | |
-| textShadowOffset | false | `ReactPropTypes.shape( {width: ReactPropTypes.number, height: ReactPropTypes.number} )` | | |
-| textShadowRadius | false | [number](#number) | | |
-| textAlignVertical | false | [oneOf](#oneof) `auto`, `top`, `bottom`, `center` | android | |
-| letterSpacing | false | [number](#number) | ios | |
-| textDecorationColor | false | `ColorPropType` | ios | |
-| textDecorationStyle | false | [oneOf](#oneof) `solid`, `double`, `dotted`, `dashed` | ios | |
-| writingDirection | false | [oneOf](#oneof) `auto`, `ltr`, `rtl` | ios | |
+| color | `ColorPropType` | | |
+| fontFamily | [string](#string) | | |
+| fontSize | [number](#number) | | |
+| fontStyle | [oneOf](#oneof) `normal`, `italic` | | |
+| fontVariant | [arrayOf](#arrayof)([oneOf](#oneof)`small-caps`, `oldstyle-nums`, `lining-nums`, `tabular-nums`, `proportional-nums`) | ios | |
+| textTransform | [oneOf](#oneof) `none`, `uppercase`, `lowercase`, `capitalize` | | |
+| fontWeight | [oneOf](#oneof) `normal`, `bold`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` | | Specifies font weight. The values 'normal' and 'bold' are supported for most fonts. Not all fonts have a variant for each of the numeric values, in that case the closest one is chosen. |
+| includeFontPadding | [bool](#bool) | android | Set to false to remove extra font padding intended to make space for certain ascenders / descenders. With some fonts, this padding can make text look slightly misaligned when centered vertically. For best results also set `textAlignVertical` to center. Default is true.|
+| lineHeight | [number](#number) | | |
+| textAlign | [oneOf](#oneof) `auto`, `left`, `right`, `center`, `justify` | | Specifies text alignment. The value 'justify' is only supported on iOS and fallbacks to `left` on Android. |
+| textDecorationLine | [oneOf](#oneof) `none`, `underline`, `line-through` | | |
+| textShadowColor | `ColorPropType` | | |
+| textShadowOffset | `ReactPropTypes.shape( {width: ReactPropTypes.number, height: ReactPropTypes.number} )` | | |
+| textShadowRadius | [number](#number) | | |
+| textAlignVertical | [oneOf](#oneof) `auto`, `top`, `bottom`, `center` | android | |
+| letterSpacing | [number](#number) | ios | |
+| textDecorationColor | `ColorPropType` | ios | |
+| textDecorationStyle | [oneOf](#oneof) `solid`, `double`, `dotted`, `dashed` | ios | |
+| writingDirection | [oneOf](#oneof) `auto`, `ltr`, `rtl` | ios | |
 
 ## TextInput
-| Name | Required | Type | Platforms | Description |
-| ---- | -------- | ---- | --------- | ----------- |
-| autoFocus | false | [bool](#bool) | | If true, focuses the input on componentDidMount. The default value is false. |
-| keyboardType | false | [oneOf](#oneof) `default`, `email-address`, `numeric`, `phone-pad`, // iOS-only `ascii-capable`, `numbers-and-punctuation`, `url`, `number-pad`, `name-phone-pad`, `decimal-pad`, `twitter`, `web-search` | | Determines which keyboard to open |
-| maxLength | false | [number](#number) | | Limits the maximum number of characters that can be entered |
-| onChangeText | false | callback func | | Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. |
+| Name | Type | Platforms | Description |
+| ---- | ---- | --------- | ----------- |
+| autoFocus | [bool](#bool) | | If true, focuses the input on componentDidMount. The default value is false. |
+| keyboardType | [oneOf](#oneof) `default`, `email-address`, `numeric`, `phone-pad`, // iOS-only `ascii-capable`, `numbers-and-punctuation`, `url`, `number-pad`, `name-phone-pad`, `decimal-pad`, `twitter`, `web-search` | | Determines which keyboard to open |
+| maxLength | [number](#number) | | Limits the maximum number of characters that can be entered |
+| onChangeText | callback func | | Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler. |
 
 ## View
-| Name | Required | Type | Platforms | Description |
-| ---- | -------- | ---- | --------- | ----------- |
+| Name | Type | Platforms | Description |
+| ---- | ---- | --------- | ----------- |
 | ...[Flexbox](#flexbox) |
 | ...[ShadowPropTypesIOS](#shadow-prop-types-ios) |
 | ...[Transforms](#transforms) |
-| backfaceVisibility | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| backgroundColor | false | `ColorPropType` | | |
-| borderBottomColor | false | `ColorPropType` | | |
-| borderBottomEndRadius | false | [number](#number) | | |
-| borderBottomStartRadius | false | [number](#number) | | |
-| borderBottomLeftRadius | false | [number](#number) | | |
-| borderBottomRightRadius | false | [number](#number) | | |
-| borderBottomWidth | false | [number](#number) | | |
-| borderColor | false | `ColorPropType` | | |
-| borderEndColor | false | `ColorPropType` | | |
-| borderStartColor | false | `ColorPropType` | | |
-| borderLeftColor | false | `ColorPropType` | | |
-| borderLeftWidth | false | [number](#number) | | |
-| borderRadius | false | [number](#number) | | |
-| borderRightColor | false | `ColorPropType` | | |
-| borderRightWidth | false | [number](#number) | | |
-| borderStyle | false | [oneOf](#oneof) `solid`, `dotted`, `dashed` | | |
-| borderTopColor | false | `ColorPropType` | | |
-| borderTopEndRadius | false | [number](#number) | | |
-| borderTopStartRadius | false | [number](#number) | | |
-| borderTopLeftRadius | false | [number](#number) | | |
-| borderTopRightRadius | false | [number](#number) | | |
-| borderTopWidth | false | [number](#number) | | |
-| borderWidth | false | [number](#number) | | |
-| opacity | false | [number](#number) | | |
-| overflow | false | [oneOf](#oneof) `visible`, `hidden` | | |
-| elevation | false | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
+| backfaceVisibility | [oneOf](#oneof) `visible`, `hidden` | | |
+| backgroundColor | `ColorPropType` | | |
+| borderBottomColor | `ColorPropType` | | |
+| borderBottomEndRadius | [number](#number) | | |
+| borderBottomStartRadius | [number](#number) | | |
+| borderBottomLeftRadius | [number](#number) | | |
+| borderBottomRightRadius | [number](#number) | | |
+| borderBottomWidth | [number](#number) | | |
+| borderColor | `ColorPropType` | | |
+| borderEndColor | `ColorPropType` | | |
+| borderStartColor | `ColorPropType` | | |
+| borderLeftColor | `ColorPropType` | | |
+| borderLeftWidth | [number](#number) | | |
+| borderRadius | [number](#number) | | |
+| borderRightColor | `ColorPropType` | | |
+| borderRightWidth | [number](#number) | | |
+| borderStyle | [oneOf](#oneof) `solid`, `dotted`, `dashed` | | |
+| borderTopColor | `ColorPropType` | | |
+| borderTopEndRadius | [number](#number) | | |
+| borderTopStartRadius | [number](#number) | | |
+| borderTopLeftRadius | [number](#number) | | |
+| borderTopRightRadius | [number](#number) | | |
+| borderTopWidth | [number](#number) | | |
+| borderWidth | [number](#number) | | |
+| opacity | [number](#number) | | |
+| overflow | [oneOf](#oneof) `visible`, `hidden` | | |
+| elevation | [number](#number) | android | (Android-only) Sets the elevation of a view, using Android's underlying [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation). This adds a drop shadow to the item and affects z-order for overlapping views. Only supported on Android 5.0+, has no effect on earlier versions. |
 
 ## Appendix
 ### Types
