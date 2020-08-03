@@ -150,7 +150,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | fontStyle | [oneOf](#oneof) `normal`, `italic` | | |
 | fontVariant | [arrayOf](#arrayof)([oneOf](#oneof)`small-caps`, `oldstyle-nums`, `lining-nums`, `tabular-nums`, `proportional-nums`) | ios | |
 | textTransform | [oneOf](#oneof) `none`, `uppercase`, `lowercase`, `capitalize` | | |
-| fontWeight | [oneOf](#oneof) `normal`, `bold`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900` | | Specifies font weight. The values 'normal' and 'bold' are supported for most fonts. Not all fonts have a variant for each of the numeric values, in that case the closest one is chosen. |
+| fontWeight | [oneOf](#oneof) `normal`, `bold`, `"100"`, `"200"`, `"300"`, `"400"`, `"500"`, `"600"`, `"700"`, `"800"`, `"900"` | | Specifies font weight. The values 'normal' and 'bold' are supported for most fonts. Not all fonts have a variant for each of the numeric values, in that case the closest one is chosen. |
 | includeFontPadding | [bool](#bool) | android | Set to false to remove extra font padding intended to make space for certain ascenders / descenders. With some fonts, this padding can make text look slightly misaligned when centered vertically. For best results also set `textAlignVertical` to center. Default is true.|
 | lineHeight | [number](#number) | | |
 | textAlign | [oneOf](#oneof) `auto`, `left`, `right`, `center`, `justify` | | Specifies text alignment. The value 'justify' is only supported on iOS and fallbacks to `left` on Android. |
