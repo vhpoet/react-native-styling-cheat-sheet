@@ -74,7 +74,7 @@ Most of the React Native styling material in one page. Imported from the [offici
 | width | [number](#number) | auto* | `width` sets the width of this component. It works similarly to `width` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See http://www.w3schools.com/cssref/pr_dim_width.asp for more details. |
 | zIndex | [number](#number) | auto* | `zIndex` controls which components display on top of others. Normally, you don't use `zIndex`. Components render according to their order in the document tree, so later components draw over earlier ones. `zIndex` may be useful if you have animations or custom modal interfaces where you don't want this behavior. It works like the CSS `z-index` property - components with a larger `zIndex` will render on top. Think of the z-direction like it's pointing from the phone into your eyeball. See https://developer.mozilla.org/en-US/docs/Web/CSS/z-index for more detail. |
 
-* properties with default value `auto` marked with asterisk are do not actually have `auto` as their default value, they just behave like if they would in *css* if they had `auto` as their value. `auto` is not valid value for those properties in react-native
+* properties with default value `auto` marked with asterisk do not actually have `auto` as their default value, they just behave like if they would in *css* if they had `auto` as their value. `auto` is not valid value for those properties in react-native
 
 ## Shadow Prop Types IOS
 | Name | Type | Description |
